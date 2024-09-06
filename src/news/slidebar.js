@@ -55,6 +55,7 @@ export default function Slidebar({title,description,img,title1,title2,title3,tit
         <h3>{title3}</h3>
         <p>{description3}</p>
        </div>
+    
        <div className="position">
        <a href={url3} className="btn btn-primary">read more</a>
        </div>
