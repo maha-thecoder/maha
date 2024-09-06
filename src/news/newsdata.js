@@ -23,14 +23,29 @@ useEffect(()=>{
 
     },[allnews])
 
+    
+   
+
+   
 
 useEffect(()=>{
-    fetch('https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=87185c0ec43c43048cbe9ff8d6fd33e9')
+    fetch(`https://newsapi.org/v2/top-headlines?country=us&category=${allnews}&apiKey=87185c0ec43c43048cbe9ff8d6fd33e9`)
     .then(res=>res.json())
     .then(data=>sgns(data.articles.slice(0,5)))
-},[])
+},[allnews])
 
-const slideData = gns.length > 0 ? gns : [{}, {}, {}, {}, {}];
+const slidearticleimg=gns.filter(atio=>atio.urlToImage)
+
+
+const slideData = gns.length > 0 ? slidearticleimg : [{}, {}, {}, {}, {}];
+
+const articlewithimg=articledata.filter(arti=>arti.urlToImage)
+
+
+console.log(slideData)
+
+
+
 
 
 
@@ -75,7 +90,7 @@ const slideData = gns.length > 0 ? gns : [{}, {}, {}, {}, {}];
 />
            
             {
-                articledata.map((article)=>{
+                articlewithimg.map((article)=>{
                     return <Titilecard title={article.title} key={article.title} description={article.description} img={article.urlToImage} url={article.url}/>
                 })
              
