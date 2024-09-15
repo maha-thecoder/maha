@@ -4,6 +4,8 @@ import Slidebar from "./slidebar";
 
 
 
+
+
 export default function Newsdata({allnews}){
 
     const [articledata,setarticledata]=useState([])
@@ -31,13 +33,16 @@ useEffect(()=>{
 useEffect(()=>{
     fetch(`https://newsapi.org/v2/top-headlines?country=us&category=${allnews}&apiKey=87185c0ec43c43048cbe9ff8d6fd33e9`)
     .then(res=>res.json())
-    .then(data=>sgns(data.articles.slice(0,5)))
+    .then(data=>sgns(data.articles.slice(0,10)))
 },[allnews])
 
-const slidearticleimg=gns.filter(atio=>atio.urlToImage)
+
+const slidearticleimg=gns.filter(artio=>artio.urlToImage)
 
 
-const slideData = gns.length > 0 ? slidearticleimg : [{}, {}, {}, {}, {}];
+const slideData = slidearticleimg.length > 0 ? slidearticleimg : [{}, {}, {}, {}, {}];
+
+
 
 const articlewithimg=articledata.filter(arti=>arti.urlToImage)
 
@@ -56,10 +61,13 @@ console.log(slideData)
 
 
 
+
+
+
    
     return(
         <div className="edit">
-        <div className="conatiner" >
+        <div className="conatiner">
             <div className="row" >
 
         
