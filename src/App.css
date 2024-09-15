@@ -14,7 +14,7 @@ border: 1px solid black;
 
 body{
     min-width: 99%;
-    margin-left: 4rem;
+    margin-left: 0rem;
 }
 
 .card{
@@ -109,6 +109,7 @@ body{
 .content{
     display: flex;
     position: relative;
+    width: 100%;
 
 
 }

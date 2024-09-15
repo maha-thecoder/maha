@@ -8,7 +8,7 @@ export default function Slidebar({title,description,img,title1,title2,title3,tit
         <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel" >
   <div className="carousel-inner">
 
-  <div className="carousel-item active">
+  <div className="carousel-item active" style={{width:"100%"}}>
         <div className="content">
       <img src={img?img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpfzG84Bvd6rPLcxcH9bF8bmrfhByh06RLVA&s'} className="d-block" alt="..."/>
        <div className="content-text">

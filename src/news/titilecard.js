@@ -7,6 +7,8 @@ import Images from "./image";
 
 import gsap from 'gsap'
 
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 
 
 
@@ -46,10 +48,16 @@ export default function Titilecard({title,description,url,img,random}) {
     },[])
 
     useEffect(()=>{
+      gsap.registerPlugin(ScrollTrigger);
       gsap.to(cardload,{
-        scrollTrigger:cardload,
-        x:0
-      })
+        x:0,
+        duration:3,
+        scrollTrigger:{cardload,
+       
+        start:"30%",
+        end:"30%",
+        markers:true}
+            })
     })
  
   return (
