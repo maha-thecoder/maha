@@ -8,7 +8,7 @@ export default function Slidebar({title,description,img,title1,title2,title3,tit
         <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel" >
   <div className="carousel-inner">
 
-  <div className="carousel-item active" style={{width:"100%"}}>
+  <div className="carousel-item active" style={{width:"130%"}}>
         <div className="content">
       <img src={img?img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpfzG84Bvd6rPLcxcH9bF8bmrfhByh06RLVA&s'} className="d-block" alt="..."/>
        <div className="content-text">
@@ -16,7 +16,7 @@ export default function Slidebar({title,description,img,title1,title2,title3,tit
         <p>{description}</p>
        </div>
        <div className="position">
-       <a href={url} className="btn btn-primary" target="_blank" id="btn">read more</a>
+       <a href={url} className="btn btn-outline-info" target="_blank" id="btn">read more</a>
        </div>
     </div>
     </div>
@@ -30,7 +30,7 @@ export default function Slidebar({title,description,img,title1,title2,title3,tit
        </div>
 
        <div className="position">
-       <a href={url1} className="btn btn-primary" target="_blank" id="btn">read more</a>
+       <a href={url1} className="btn btn-outline-info" target="_blank" id="btn">read more</a>
        </div>
     </div>
     </div>
@@ -43,7 +43,7 @@ export default function Slidebar({title,description,img,title1,title2,title3,tit
         <p>{description2}</p>
        </div>
        <div className="position">
-       <a href={url2} className="btn btn-primary"  target="_blank" id="btn">read more</a>
+       <a href={url2} className="btn btn-outline-info"  target="_blank" id="btn">read more</a>
        </div>
     </div>
     </div>
@@ -57,7 +57,7 @@ export default function Slidebar({title,description,img,title1,title2,title3,tit
        </div>
     
        <div className="position">
-       <a href={url3} className="btn btn-primary" target="_blank" id="btn">read more</a>
+       <a href={url3} className="btn btn-outline-info" target="_blank" id="btn">read more</a>
        </div>
     </div>
     </div>
@@ -70,7 +70,7 @@ export default function Slidebar({title,description,img,title1,title2,title3,tit
         <p>{description4}</p>
        </div>
        <div className="position">
-       <a href={url4} className="btn btn-primary" target="_blank" id="btn">read more</a>
+       <a href={url4} className="btn btn-outline-info" target="_blank" id="btn">read more</a>
        </div>
     </div>
     </div>

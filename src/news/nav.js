@@ -27,9 +27,10 @@ export default function Nav({setnews,aftername}){
   
 
     return(
-        <div>
+      <div className="nav-container" style={{ width: '100%' }}>
+
         <nav className="navbar navbar-expand-md bg-body-tertiary">
-  <div className="container-fluid" ref={el=>{cardload=el}}>
+  <div className="container" ref={el=>{cardload=el}}>
     <a className="navbar-brand" href="\"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR34HlJf28LMAAA_Qr3AJc2GtVNZJ7NV8cRdw&s" alt="Bootstrap" width="80" height="44"/>NewsForU</a>
    
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,16 +44,16 @@ export default function Nav({setnews,aftername}){
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         
       <li className="nav-item">
-          <div className="nav-link active neon-button" onClick={()=>{setnews('business'); aftername("business")}} id='hover1'>Business</div>
+          <div className="nav-link active neon-button" onClick={()=>{setnews('business'); aftername("business")}} id='hover'>Business</div>
         </li>
         <li className="nav-item">
-          <div className="nav-link active neon-button" onClick={()=>{setnews('entertainment');aftername('Entertainment')}} id='hover2'>Entertainment</div>
+          <div className="nav-link active neon-button" onClick={()=>{setnews('entertainment');aftername('Entertainment')}} id='hover'>Entertainment</div>
         </li>
         <li className="nav-item">
-          <div className="nav-link active neon-button" onClick={()=>{setnews('health'); aftername("Health")}} id='hover3'>Health</div>
+          <div className="nav-link active neon-button" onClick={()=>{setnews('health'); aftername("Health")}} id='hover'>Health</div>
         </li>
         <li className="nav-item">
-          <div className="nav-link active neon-button" onClick={()=>{setnews('sports'); aftername("Sports")}} id='hover4'>Sports</div>
+          <div className="nav-link active neon-button" onClick={()=>{setnews('sports'); aftername("Sports")}} id='hover'>Sports</div>
         </li>
        </ul>
       

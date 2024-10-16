@@ -13,7 +13,7 @@ border: 1px solid black;
 }
 
 body{
-    min-width: 99%;
+    min-width: 100%;
     margin-left: 0rem;
 }
 
@@ -40,38 +40,15 @@ body{
     height: 140px;
 }
 
-#hover1:hover{
-
+#hover:hover{
     cursor: pointer;
-    background-color: rgb(30 41 59);
-
-
-}
-
-#hover2:hover{
-
-    cursor: pointer;
-    background-color: rgb(30 41 59);
-
-
-}
-#hover3:hover{
-
-    cursor: pointer;
-    background-color: rgb(30 41 59);
-
-
-}
-#hover4:hover{
-
-    cursor: pointer;
-    background-color: rgb(30 41 59);
-
-
 }
 
 
-#hover1,#hover2,#hover3,#hover4{
+
+
+
+#hover{
     border: 1px solid black;
     display: flex;
 
@@ -80,16 +57,17 @@ body{
     background-color: black;
     outline: none;
     border: none;
+    justify-content: space-around;
     
 
 }
 
-#hover2,#hover3,#hover4{
-    margin-left: 7rem;
-}
+
+
 #hover1:active,#hover2:active,#hover3:active,#hover4:active{
     background-color: rgb(17 24 39);
 }
+
 
 .middle-name{
     text-transform: uppercase;
@@ -112,6 +90,11 @@ body{
     width: 100%;
 
 
+}
+
+.container{
+    display: flex;
+    justify-content: space-around   ;
 }
 
 .content img{
@@ -149,17 +132,23 @@ body{
     min-height: 100vh;
     display: grid;
     place-items: center;
-    background: var(--clr-bg);
-    
-    padding-right: 10rem;
+  
   }
   .container{
-    opacity: 0;
+    opacity: 1;
+   
+
+  }
+
+  .nav-container{
+    width: 100%;
+ 
   }
   .neon-button {
     font-size: 1.3rem;
   
     display: flex;
+    align-items: center;
     cursor: pointer;
     text-decoration: none;
     color: var(--clr-neon);
@@ -219,3 +208,16 @@ body{
     opacity: 1;
   }
   
+
+ 
+  .carousel,.slide{
+    width: 100%;
+  }
+
+  @media (min-width:400px){
+    #carouselExampleAutoplaying{
+        min-height: 400px;
+
+    }
+
+  }
